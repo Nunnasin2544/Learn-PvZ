@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: d5ba6b5ea740fc74280faab2f89c7820
+  productGUID: 997678659d757344e8c4fa6f699d350f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Learn-PvZ
+  productName: PvZ
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -823,14 +823,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Learn-PvZ
+  metroPackageName: PvZ
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Learn-PvZ
+  metroApplicationDescription: PvZ
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -899,10 +899,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 2c8db1d7-05f0-4907-9881-53e9a04725f9
+  cloudProjectId: 5717626a-af7f-4c90-a238-a40a7baf8afe
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Learn-PvZ 2025-02-09_14-14-09
+  projectName: PvZ
   organizationId: nunnasin
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

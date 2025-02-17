@@ -14,8 +14,7 @@ public class PlantObject : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bullet = Instantiate(plantData.ObjectSpawn, transform.position, Quaternion.identity);
-        Destroy(bullet, 5f);
+        Instantiate(plantData.ObjectSpawn, transform.position, Quaternion.identity);
     }
 
     public void TakeDamage(float damage)

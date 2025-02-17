@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9214105112804257983}
   - component: {fileID: 8840580646489395488}
-  - component: {fileID: 939054568522432260}
   - component: {fileID: 405084971707736864}
   - component: {fileID: 1257260305041092664}
+  - component: {fileID: 939054568522432260}
   m_Layer: 0
   m_Name: Zombie Object
   m_TagString: zombie
@@ -87,19 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &939054568522432260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7192329853773691646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e90ea0ebfcb6f24783bebfa8df3ab57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zombieData: {fileID: 11400000, guid: 7d10a72af66d1ea4d80a2822882f6f9f, type: 2}
 --- !u!50 &405084971707736864
 Rigidbody2D:
   serializedVersion: 4
@@ -175,3 +162,16 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &939054568522432260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192329853773691646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e90ea0ebfcb6f24783bebfa8df3ab57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieData: {fileID: 11400000, guid: 7d10a72af66d1ea4d80a2822882f6f9f, type: 2}

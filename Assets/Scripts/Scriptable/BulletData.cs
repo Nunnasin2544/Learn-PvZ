@@ -6,5 +6,6 @@ public class BulletData : ScriptableObject
     public int ID;
     public float Damage;
     public float Speed;
+    public float LifeTime;
     public Sprite Sprite;
 }

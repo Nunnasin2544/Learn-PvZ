@@ -14,10 +14,10 @@ public class ZombieObject : MonoBehaviour
     {
         currentHealth = zombieData.Health;
         //GetComponent<SpriteRenderer>().sprite = zombieData.Sprite;
-        rb = GetComponent<Rigidbody2D>();
         originalVelocity = new Vector2(-zombieData.MoveSpeed, 0);
-        rb.velocity = originalVelocity;
         originalPosition = transform.position;
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = originalVelocity;
     }
 
     public void TakeDamage(float damage)

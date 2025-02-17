@@ -4,7 +4,12 @@ public class PlantBullet : MonoBehaviour
 {
     [SerializeField] private BulletData bulletData;
 
-    private void Update()
+    private void Start()
+    {
+        Destroy(gameObject, bulletData.LifeTime);
+    }
+
+    private void FixedUpdate()
     {
         transform.Translate(bulletData.Speed * Time.deltaTime * Vector2.right);
     }

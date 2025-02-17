@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9214105112804257983}
   - component: {fileID: 8840580646489395488}
-  - component: {fileID: 4973092365057729211}
   - component: {fileID: 4090205722007988179}
   - component: {fileID: 4573070748997410700}
+  - component: {fileID: 4973092365057729211}
   m_Layer: 0
   m_Name: 2
   m_TagString: plant
@@ -87,19 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4973092365057729211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7192329853773691646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a4114ab6e8c7374ab7d770eb929e1c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  plantData: {fileID: 11400000, guid: 1224f972ec53169498b9748113918575, type: 2}
 --- !u!50 &4090205722007988179
 Rigidbody2D:
   serializedVersion: 4
@@ -172,3 +159,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4973092365057729211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192329853773691646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4114ab6e8c7374ab7d770eb929e1c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantData: {fileID: 11400000, guid: 1224f972ec53169498b9748113918575, type: 2}

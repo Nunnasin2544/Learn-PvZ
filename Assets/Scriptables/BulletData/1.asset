@@ -15,4 +15,5 @@ MonoBehaviour:
   ID: 1
   Damage: 10
   Speed: 5
+  LifeTime: 5
   Sprite: {fileID: 0}

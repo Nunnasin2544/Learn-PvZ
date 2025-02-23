@@ -1,20 +1,42 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlantObject : MonoBehaviour
 {
     [SerializeField] private PlantData plantData;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform floorPoint;
     private float currentHealth;
 
     private void Start()
     {
         currentHealth = plantData.Health;
         //GetComponent<SpriteRenderer>().sprite = plantData.Sprite;
-        InvokeRepeating(nameof(Shoot), 0, plantData.AttackSpeed);
+        StartCoroutine(SpawnCoroutine());
     }
 
-    private void Shoot()
+    private IEnumerator SpawnCoroutine()
     {
-        Instantiate(plantData.ObjectSpawn, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        while (true)
+        {
+            OnSpawn();
+            yield return new WaitForSeconds(plantData.AttackDelay);
+        }
+    }
+
+    private void OnSpawn()
+    {
+        GameObject spawnObject = 
+            Instantiate(
+                plantData.ObjectSpawn, 
+                spawnPoint.position, 
+                Quaternion.identity
+            );
+        spawnObject.transform.SetParent(spawnPoint);
+
+        if (spawnObject.CompareTag("sun"))
+            spawnObject.GetComponent<SunObject>().Init((int)plantData.Damage ,floorPoint);
     }
 
     public void TakeDamage(float damage)

@@ -52,7 +52,7 @@ public class ZombieObject : MonoBehaviour
         while (plant != null)
         {
             plant.GetComponent<PlantObject>().TakeDamage(zombieData.Damage);
-            yield return new WaitForSeconds(zombieData.AttackSpeed);
+            yield return new WaitForSeconds(zombieData.AttackDelay);
         }
 
         isAttacking = false;
@@ -66,10 +66,10 @@ public class ZombieObject : MonoBehaviour
         while (isAttacking)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + 0.1f);
-            yield return new WaitForSeconds(zombieData.AttackSpeed);
+            yield return new WaitForSeconds(zombieData.AttackDelay);
 
             transform.position = new Vector2(transform.position.x, transform.position.y - 0.1f);
-            yield return new WaitForSeconds(zombieData.AttackSpeed);
+            yield return new WaitForSeconds(zombieData.AttackDelay);
         }
     }
 }

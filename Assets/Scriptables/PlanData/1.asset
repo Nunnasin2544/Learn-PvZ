@@ -17,6 +17,6 @@ MonoBehaviour:
   Cost: 50
   Health: 100
   Damage: 50
-  AttackSpeed: 5
+  AttackDelay: 10
   Sprite: {fileID: 0}
-  ObjectSpawn: {fileID: 0}
+  ObjectSpawn: {fileID: 7192329853773691646, guid: 629362ecd47ea68459207eb84b38ec20, type: 3}

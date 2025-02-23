@@ -17,6 +17,6 @@ MonoBehaviour:
   Health: 50
   Damage: 10
   MoveSpeed: 0.7
-  AttackSpeed: 0.5
+  AttackDelay: 0.5
   Sprite: {fileID: 0}
   ObjectSpawn: {fileID: 0}

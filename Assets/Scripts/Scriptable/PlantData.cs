@@ -8,7 +8,7 @@ public class PlantData : ScriptableObject
     public int Cost;
     public float Health;
     public float Damage;
-    public float AttackSpeed;
+    public float AttackDelay;
     public Sprite Sprite;
     public GameObject ObjectSpawn;
 }

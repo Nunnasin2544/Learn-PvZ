@@ -8,7 +8,7 @@ public class ZombieData : ScriptableObject
     public float Health;
     public float Damage;
     public float MoveSpeed;
-    public float AttackSpeed;
+    public float AttackDelay;
     public Sprite Sprite;
     public GameObject ObjectSpawn;
 }

@@ -12,7 +12,8 @@ public class PlantObject : MonoBehaviour
     {
         currentHealth = plantData.Health;
         //GetComponent<SpriteRenderer>().sprite = plantData.Sprite;
-        StartCoroutine(SpawnCoroutine());
+        if (plantData.ObjectSpawn != null)
+            StartCoroutine(SpawnCoroutine());
     }
 
     private IEnumerator SpawnCoroutine()

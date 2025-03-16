@@ -1,10 +1,11 @@
 using System.Collections;
+using Unity.Collections;
 using UnityEngine;
 
 public class ZombieObject : MonoBehaviour
 {
     [SerializeField] private ZombieData zombieData;
-    private float currentHealth;
+    [SerializeField, ReadOnly] private float currentHealth;
     private bool isAttacking = false;
     private Rigidbody2D rb;
     private Vector2 originalVelocity;

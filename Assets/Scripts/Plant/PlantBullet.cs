@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlantBullet : MonoBehaviour
 {
     [SerializeField] private BulletData bulletData;
+    private bool hasHit = false;
 
     private void Start()
     {
@@ -16,8 +17,9 @@ public class PlantBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("zombie"))
+        if (!hasHit && collision.CompareTag("zombie"))
         {
+            hasHit = true;
             collision.GetComponent<ZombieObject>().TakeDamage(bulletData.Damage);
             Destroy(gameObject);
         }

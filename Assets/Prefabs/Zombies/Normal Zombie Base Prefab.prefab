@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1257260305041092664}
   - component: {fileID: 939054568522432260}
   m_Layer: 0
-  m_Name: Zombie Object
+  m_Name: Normal Zombie Base Prefab
   m_TagString: zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.25516194, g: 0.8867924, b: 0.6086015, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

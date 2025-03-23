@@ -1,8 +1,21 @@
+using System;
 using UnityEngine;
 
 public class ClickManager : MonoBehaviour
 {
+    public static ClickManager Instance { get; private set; }
+
+    public event Action OnClickInput;
+
     private GameManager gameManager;
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
 
     private void Start()
     {
@@ -22,6 +35,8 @@ public class ClickManager : MonoBehaviour
                 gameManager.UpdateSunCost(sun.SunCost);
                 Destroy(sun.gameObject);
             }
+
+            OnClickInput?.Invoke();
         }
     }
 }
